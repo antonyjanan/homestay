@@ -1,0 +1,92 @@
+.testimonials {
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 45px; /* Margin for spacing */
+    text-align: center;
+    overflow: hidden; /* Hide scrollbar */
+    position: relative;
+}
+
+.testimonials h2 {
+    color: #ff7e5f;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 200%; /* Double the width to accommodate duplicated testimonials */
+    animation: scrollTestimonials 20s linear infinite; /* Continuous scrolling */
+}
+
+.testimonial {
+    flex: 0 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin-right: 20px; /* Space between testimonials */
+    text-align: center;
+    opacity: 0; 
+    transform: translateX(30px); 
+    animation: slideIn 0.5s forwards; 
+}
+
+.testimonial:nth-child(odd) {
+    animation-delay: 0.3s; /* Staggered animation */
+}
+
+.testimonial:nth-child(even) {
+    animation-delay: 0.6s; /* Staggered animation */
+}
+.testimonial p {
+    position: relative;
+    text-align: left; /* To make the text left-aligned */
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #ff7e5f;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    color: #ff5722;
+}
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrollTestimonials {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Adjust based on width */
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 20px;
+    }
+
+    .testimonials h2 {
+        font-size: 28px;
+    }
+
+    .testimonial {
+        width: 250px;
+    }
+}

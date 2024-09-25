@@ -1,0 +1,73 @@
+.content {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  
+  h2 {
+    color: #ff7e5f;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .facility-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .facility-icon {
+    font-size: 40px;
+    color: #ff7e5f;
+    margin-bottom: 10px;
+  }
+  
+  .facility-item h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .facility-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  

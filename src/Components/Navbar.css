@@ -1,0 +1,61 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-bottom: 2px solid #ff7e5f; 
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.navbar.active {
+    background-color: #333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KICA8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjE2IiBzdHJva2U9IiMzMzMiIHN0cm9rZSdpbmdsaW5lLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+"); /* Customize the icon */
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 18px;
+    margin-left: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffe5d9 !important; 
+    text-decoration: underline;
+}
+
+.navbar-collapse {
+    justify-content: flex-end; 
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        text-align: center; 
+    }
+
+    .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px; 
+    }
+}

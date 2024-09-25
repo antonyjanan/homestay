@@ -1,0 +1,50 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .content {
+      padding: 10px;
+  }
+
+  .content h2 {
+      font-size: 24px;
+  }
+
+  .content p {
+      font-size: 14px;
+  }
+}
+/* src/App.css */
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fafafa; /* Light background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif; /* A stylish sans-serif font */
+}
+
+p {
+  font-family: 'Roboto', sans-serif; /* A clean, readable font */
+}
